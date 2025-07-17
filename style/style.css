@@ -1,0 +1,212 @@
+/*********************************************************************
+GLOBAL
+*********************************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 100%;
+}
+
+/*************************************************************************
+HEADER
+*************************************************************************/
+
+.header-site {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-site_title {
+    font-weight: lighter;
+}
+
+/**************************************************************************
+MAIN
+**************************************************************************/
+
+.section-contenair {
+    background-color: rgb(202, 202, 202);
+    border-radius: 50px 50px 50px 50px / 25px 25px 25px 25px;
+    height: 150px;
+    width: 400px;
+    margin: 5% 0 2% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+}
+
+.section-title {
+    font-weight: lighter;
+}
+
+.section-img-contain {
+    display: none;
+}
+
+.btn-section {
+    background-color: rgb(175, 76, 15);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    width: 140px;
+    border: none;
+}
+
+.btn-link {
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+.section-text {
+    display: none;
+}
+
+/****************************************************************************
+FOOTER
+****************************************************************************/
+
+.footer-site {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+
+}
+
+.footer-title {
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+/****************************************************************************
+MEDIA QUERIES
+****************************************************************************/
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    main {
+        background-color: rgb(202, 202, 202);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .section-contenair {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: solid 4px;
+        border-radius: 40px;
+        padding: 15px;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        margin: 5% 3%;
+        width: 80%;
+        height: 60%;
+    }
+
+    .section-text {
+        display: block;
+    }
+
+    .btn-section {
+        position: relative;
+        transform: translate(-50%, -50%);
+        top: 40%;
+        left: 95%;
+        height: 30%;
+        width: 60px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .header-site,
+    .footer-site {
+        color: rgb(231, 49, 47);
+    }
+
+    main {
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .section-contenair {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: solid 2px;
+        border-radius: 40px;
+        padding: 15px;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        margin: 5% 3%;
+        width: 80%;
+        height: 60%;
+    }
+
+    .section-item {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .section-title {
+        color: rgb(231, 49, 47);
+        margin-left: 8%;
+    }
+
+    .section-img-contain {
+        display: block;
+        width: 80px;
+    }
+
+    .section-text {
+        display: block;
+    }
+
+    .btn-section {
+        position: relative;
+        transform: translate(-50%, -50%);
+        top: 40%;
+        left: 96%;
+        height: 30%;
+        width: 30%;
+        background-color: rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
