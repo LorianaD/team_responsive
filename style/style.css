@@ -30,21 +30,21 @@ HEADER
 .header-site {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    height: 20vh;
+    height: 20vh; /* 20% du corps */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .header-site_title {
-    font-weight: lighter;
+    font-weight: lighter; /* rendre le titre moins gras */
 }
 
 /**************************************************************************
 MAIN
 **************************************************************************/
 
-.section-contenair {
+.section-contenair { /* parent de section !!! */
     background-color: rgb(202, 202, 202);
     border-radius: 50px 50px 50px 50px / 25px 25px 25px 25px;
     height: 150px;
@@ -61,7 +61,7 @@ MAIN
 }
 
 .section-img-contain {
-    display: none;
+    display: none; /* l'image est invisible */
 }
 
 .btn-section {
@@ -80,7 +80,7 @@ MAIN
 }
 
 .section-text {
-    display: none;
+    display: none; /* le paragraphe est invisible */
 }
 
 /****************************************************************************
@@ -108,11 +108,13 @@ MEDIA QUERIES
 
 @media (min-width: 600px) and (max-width: 1024px) {
 
+    /***** Corps *****/
+
     main {
         background-color: rgb(202, 202, 202);
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* on l'a mis en 3 colonnes d'une cellule */
+        grid-template-rows: repeat(2, 1fr); /* 2 ligne d'une cellule*/
     }
 
     .section-contenair {
@@ -130,7 +132,7 @@ MEDIA QUERIES
     }
 
     .section-text {
-        display: block;
+        display: block; /* le paragraphe apparet */
     }
 
     .btn-section {
@@ -150,10 +152,14 @@ MEDIA QUERIES
 
 @media (min-width: 1024px) {
 
+    /***** En tete et Pied de page *****/
+
     .header-site,
-    .footer-site {
+    .footer-site { /* la couleur des titre change en rouge */
         color: rgb(231, 49, 47);
     }
+
+    /***** Corp *****/
 
     main {
         background-color: rgb(255, 255, 255);
@@ -188,7 +194,7 @@ MEDIA QUERIES
     }
 
     .section-img-contain {
-        display: block;
+        display: block; /* l'image est visible */
         width: 80px;
     }
 
